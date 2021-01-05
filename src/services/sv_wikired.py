@@ -4,8 +4,7 @@ import json
 
 class Wikired:
     def __init__(self):
-        self.__ukranian_model = markovify.Text.from_json(self.__read_model('ukranian.json'))
-        self.__wikired_model = markovify.Text.from_json(self.__read_model('wikired.json'))
+        pass
 
     def __read_model(self, model_name: str):
         with open(model_name) as file:
@@ -13,13 +12,15 @@ class Wikired:
 
     async def ukranian(self):
         try:
-            return self.__ukranian_model.make_short_sentence(280)
+            model = markovify.Text.from_json(self.__read_model('ukranian.json'))
+            return model.make_short_sentence(280)
         except Exception as e:
             print(e)
 
     async def wikired(self):
         try:
-            return self.__wikired_model.make_short_sentence(280)
+            model = markovify.Text.from_json(self.__read_model('wikired.json'))
+            return model.make_short_sentence(280)
         except Exception as e:
             print(e)
         pass
