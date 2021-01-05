@@ -13,5 +13,5 @@ RUN pip install -U pip \
     && rm -rf /wheels
 WORKDIR /app
 COPY . .
-EXPOSE 8000
-CMD ["uvicorn", "app:app"]
+EXPOSE 80
+CMD ["uvicorn", "app:app", "--host","0.0.0.0", "--port", "80"]
