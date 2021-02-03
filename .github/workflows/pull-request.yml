@@ -2,9 +2,8 @@ name: Build Docker image
 
 on:
   pull_request:
-    branches:
-      - master
-
+    branches: [ master ]
+    types: [ opened, synchronize, closed ]
 jobs:
   ci:
     runs-on: ubuntu-latest
