@@ -15,7 +15,7 @@ jobs:
         language: [ 'python' ]
         # Learn more...
     container:
-      image: node
+      image: python 
     steps:
       - uses: actions/checkout@v1
       - name: Install & Tests
