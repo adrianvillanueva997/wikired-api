@@ -14,4 +14,6 @@ RUN pip install -U pip \
 WORKDIR /app
 COPY . .
 EXPOSE 80
+RUN adduser -D appuser
+USER appuser
 CMD ["uvicorn", "app:app", "--host","0.0.0.0", "--port", "80"]
