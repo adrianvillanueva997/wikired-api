@@ -18,6 +18,6 @@ async def get_ukranian():
 
 
 @app.get("/wikired")
-async def get_ukranian():
+async def get_wikired():
     text = await wikired.wikired()
     return {"text": text}

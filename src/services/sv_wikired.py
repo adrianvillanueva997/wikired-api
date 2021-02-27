@@ -1,5 +1,6 @@
-import markovify
 import json
+import markovify
+
 
 
 class Wikired:
@@ -23,7 +24,6 @@ class Wikired:
             return model.make_short_sentence(280)
         except Exception as e:
             print(e)
-        pass
 
     def __create_model(self):
         messages = []
