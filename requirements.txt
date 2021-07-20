@@ -7,7 +7,7 @@ idna==3.2
 markovify==0.9.3
 pydantic==1.8.2
 sniffio==1.2.0
-starlette==0.14.2
+starlette==0.16.0
 typing-extensions==3.10.0.0
 Unidecode==1.2.0
 uvicorn==0.14.0
