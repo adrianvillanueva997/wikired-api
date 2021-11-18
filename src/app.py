@@ -1,6 +1,5 @@
 from fastapi import FastAPI
-
-from src.services.sv_wikired import Wikired
+from wikired_api.services.sv_wikired import Wikired
 
 app = FastAPI()
 wikired = Wikired()

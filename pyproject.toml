@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "wikired_api"
+version = "0.1.0"
+description = ""
+authors = ["adrianvillanueva997"]
+license = "GPL v3"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+fastapi = "^0.70.0"
+markovify = "^0.9.3"
+uvicorn = "^0.15.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
