@@ -20,7 +20,7 @@ jobs:
       - uses: actions/checkout@v1
       - name: Install & Tests
         run: |
-          pip install -r requirements.txt
+          pip install poetry && poetry install
 
   cd:
     runs-on: ubuntu-latest
