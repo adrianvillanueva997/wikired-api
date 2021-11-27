@@ -1,9 +1,8 @@
-FROM python:3.10.0-alpine as base
+FROM python:3.10.0-slim as base
 FROM base as builder
 WORKDIR /build
-RUN apk add --no-cache build-base libffi-dev && pip3 install poetry
+RUN pip3 install poetry
 COPY . .
-RUN poetry install
 RUN poetry build
 
 FROM base as production
