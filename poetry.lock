@@ -81,11 +81,11 @@ python-versions = ">=3.5"
 
 [[package]]
 name = "markovify"
-version = "0.9.3"
+version = "0.9.4"
 description = "A simple, extensible Markov chain generator. Uses include generating random semi-plausible sentences based on an existing text."
 category = "main"
 optional = false
-python-versions = "*"
+python-versions = ">=3.6"
 
 [package.dependencies]
 unidecode = "*"
@@ -162,7 +162,7 @@ standard = ["websockets (>=10.0)", "httptools (>=0.2.0,<0.4.0)", "watchgod (>=0.
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "fa4f57602de62ba59857890131da0ce122a5a68b0f0a5f29bb7b4a9a563a5609"
+content-hash = "50188da9722adb147b2c75deb0c4554a1767a2eeb0a3d6520a96f63f2c5c9276"
 
 [metadata.files]
 anyio = [
@@ -194,7 +194,7 @@ idna = [
     {file = "idna-3.3.tar.gz", hash = "sha256:9d643ff0a55b762d5cdb124b8eaa99c66322e2157b69160bc32796e824360e6d"},
 ]
 markovify = [
-    {file = "markovify-0.9.3.tar.gz", hash = "sha256:e31c6fcdf4ed12c8e00e39df735ffa0d5546f7515ff4c32e4e0ae23c41f9cba9"},
+    {file = "markovify-0.9.4.tar.gz", hash = "sha256:eac0a156ed54bb6bede32ef20131813fbec9db70b515ead57b4d8887a16dfe39"},
 ]
 pydantic = [
     {file = "pydantic-1.8.2-cp36-cp36m-macosx_10_9_x86_64.whl", hash = "sha256:05ddfd37c1720c392f4e0d43c484217b7521558302e7069ce8d318438d297739"},
