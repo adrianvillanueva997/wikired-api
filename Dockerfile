@@ -1,4 +1,4 @@
-FROM python:3.11.0rc1-slim as base
+FROM python:3.12.0a2-slim as base
 FROM base as builder
 WORKDIR /build
 RUN pip3 install poetry
