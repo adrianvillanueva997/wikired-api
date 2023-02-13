@@ -7,7 +7,7 @@ license = "GPL v3"
 
 [tool.poetry.dependencies]
 python = "^3.9"
-fastapi = "^0.79.0"
+fastapi = "^0.91.0"
 markovify = "^0.9.4"
 uvicorn = "^0.18.2"
 
